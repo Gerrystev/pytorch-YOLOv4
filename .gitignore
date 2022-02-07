@@ -15,6 +15,7 @@ __pycache__
 runs
 log
 
+*.rar
 *.jpg
 *.json
 data/outcome

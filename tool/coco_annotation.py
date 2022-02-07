@@ -16,8 +16,8 @@ from tqdm import tqdm
 import os
 
 """hyper parameters"""
-json_file_path = '/content/annotations/instances_train2017.json'
-images_dir_path = '/content/images'
+json_file_path = '/content/pytorch-YOLOv4/annotations/instances_train2017.json'
+images_dir_path = '/content/pytorch-YOLOv4/images'
 output_path = '/content/pytorch-YOLOv4/data/train.txt'
 
 

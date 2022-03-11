@@ -447,7 +447,8 @@ def train(model, device, config, epochs=5, batch_size=1, save_cp=True, log_step=
                 except OSError:
                     pass
                 # save_path = os.path.join(config.checkpoints, f'{save_prefix}{epoch + 1}.pth')
-                save_path = "/content/gdrive/MyDrive/College/Skripsi/Weights/YOLOv4"
+                checkpoint_path = '/content/gdrive/MyDrive/College/Skripsi/Weights/YOLOv4'
+                save_path = os.path.join(checkpoint_path, f'{save_prefix}{epoch + 1}.pth')
                 if isinstance(model, torch.nn.DataParallel):
                     torch.save(model.state_dict(), save_path)
                 else:

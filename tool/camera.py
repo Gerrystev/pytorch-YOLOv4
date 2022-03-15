@@ -41,7 +41,7 @@ if __name__ == '__main__':
     confidence = float(args.confidence)
     nms_thesh = float(args.nms_thresh)
     CUDA = torch.cuda.is_available()
-    num_classes = 80
+    num_classes = 1
     bbox_attrs = 5 + num_classes
     class_names = load_class_names("data/coco.names")
 

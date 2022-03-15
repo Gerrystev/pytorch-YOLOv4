@@ -125,7 +125,7 @@ def main(engine_path, image_path, image_size):
 
         image_src = cv2.imread(image_path)
 
-        num_classes = 80
+        num_classes = 1
 
         for i in range(2):  # This 'for' loop is for speed check
                             # Because the first iteration is usually longer
@@ -133,7 +133,7 @@ def main(engine_path, image_path, image_size):
 
         if num_classes == 20:
             namesfile = 'data/voc.names'
-        elif num_classes == 80:
+        elif num_classes == 1:
             namesfile = 'data/coco.names'
         else:
             namesfile = 'data/names'

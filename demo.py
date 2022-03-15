@@ -37,7 +37,7 @@ def detect_cv2(cfgfile, weightfile, imgfile):
     num_classes = m.num_classes
     if num_classes == 20:
         namesfile = 'data/voc.names'
-    elif num_classes == 80:
+    elif num_classes == 1:
         namesfile = 'data/coco.names'
     else:
         namesfile = 'data/x.names'
@@ -80,7 +80,7 @@ def detect_cv2_camera(cfgfile, weightfile):
     num_classes = m.num_classes
     if num_classes == 20:
         namesfile = 'data/voc.names'
-    elif num_classes == 80:
+    elif num_classes == 1:
         namesfile = 'data/coco.names'
     else:
         namesfile = 'data/x.names'
@@ -119,7 +119,7 @@ def detect_skimage(cfgfile, weightfile, imgfile):
     num_classes = m.num_classes
     if num_classes == 20:
         namesfile = 'data/voc.names'
-    elif num_classes == 80:
+    elif num_classes == 1:
         namesfile = 'data/coco.names'
     else:
         namesfile = 'data/x.names'

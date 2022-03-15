@@ -51,10 +51,10 @@ def demo_tensorflow(tfpb_file="./weight/yolov4.pb", image_path=None, print_senso
 
         boxes = post_processing(img_in, 0.4, outputs)
 
-        num_classes = 80
+        num_classes = 1
         if num_classes == 20:
             namesfile = 'data/voc.names'
-        elif num_classes == 80:
+        elif num_classes == 1:
             namesfile = 'data/coco.names'
         else:
             namesfile = 'data/names'

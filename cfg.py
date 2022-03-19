@@ -71,7 +71,7 @@ elif Cfg.mosaic:
     Cfg.mixup = 3
 
 Cfg.checkpoints = os.path.join('/content', 'gdrive', 'MyDrive', 'Weights', 'YOLOv4')
-Cfg.checkpoints = os.path.join('/content', 'gdrive', 'MyDrive', 'Log', 'YOLOv4')
+Cfg.TRAIN_TENSORBOARD_DIR = os.path.join('/content', 'gdrive', 'MyDrive', 'Log', 'YOLOv4')
 
 Cfg.iou_type = 'iou'  # 'giou', 'diou', 'ciou'
 
